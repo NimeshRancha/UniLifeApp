@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { User } from "../models/User";
-import { ApiService } from "../services/ApiService";
+import { UserService } from "../services/UserService";
 
 export function useUserViewModel() {
   const [users, setUsers] = useState<User[]>([]);
@@ -10,7 +10,7 @@ export function useUserViewModel() {
   useEffect(() => {
     async function loadUsers() {
       try {
-        const data = await ApiService.fetchUsers();
+        const data = await UserService.fetchUsers();
         setUsers(data);
       } catch (err: any) {
         setError(err.message);

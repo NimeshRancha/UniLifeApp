@@ -1,8 +1,9 @@
+import { BASE_URL } from "./Config"; // Import the BASE_URL from config
 import { User } from "../models/User";
 
-export class ApiService {
+export class UserService {
   static async fetchUsers(): Promise<User[]> {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch(`${BASE_URL}/users`); // Use the BASE_URL here
     if (!response.ok) {
       throw new Error("Failed to fetch users");
     }
