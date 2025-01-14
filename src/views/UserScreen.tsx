@@ -40,4 +40,9 @@ const styles = StyleSheet.create({
   error: { color: "red", fontSize: 16 },
   item: { padding: 10, borderBottomWidth: 1, borderColor: "#ccc" },
   name: { fontSize: 18, fontWeight: "bold" },
+  sectionTitle: { fontSize: 16, fontWeight: "bold", marginTop: 10 },
+  reviewContainer: { marginTop: 10, paddingLeft: 10 },
+  reviewText: { fontSize: 14, fontStyle: "italic" },
+  photoContainer: { marginTop: 5, alignItems: "center" },
+  photo: { width: 200, height: 150, borderRadius: 10, marginVertical: 5 },
 });

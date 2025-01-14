@@ -1,6 +1,6 @@
 import React from "react";
-import UserScreen from "../src/views/UserScreen";
+import Navigation from "../Navigation";
 
 export default function Index() {
-  return <UserScreen />;
+  return <Navigation />;
 }
